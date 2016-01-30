@@ -1,0 +1,8 @@
+# -*- coding: utf-8 -*-
+from bazar.config.routes import routes
+
+
+debug = {
+    'enabled': True
+}
+
