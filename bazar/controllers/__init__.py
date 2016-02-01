@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from bazar.controllers.index import Index
-from bazar.controllers.login import Login
+from bazar.controllers.session import Session
 
 
-__all__ = ['Index','Login']
+__all__ = ['Index','Session']
