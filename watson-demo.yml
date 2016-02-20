@@ -1,0 +1,15 @@
+uwsgi:
+    master: true
+    processes: 1
+    vaccum: true
+    chmod-socket: 660
+    uid: http
+    gid: http
+    plugins: python
+    socket: /var/run/uwsgi/watson-demo.com.sock
+    chdir: /srv/http/watson-demo.com/bazar
+    logoto: /srv/http/watson-demo.com/data/logs/error_log
+    home: /srv/http/watson-demo.com/venv
+    pythonpath: /srv/http/watson-demo.com
+    module: app
+    touch-reload: /srv/http/watson-demo.com/bazar/app.py
