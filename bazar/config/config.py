@@ -15,4 +15,14 @@ debug = {
     'enabled': True
 }
 
+dependencies = {
+        'definitions': {
+            'db': {
+                'item': 'bazar.db.create_session',
+                'init': {
+                    'connection_string': 'sqlite:///data.db'}
+            }
+        }
+}
+
 # vim: sw=4 sts=4 et ai

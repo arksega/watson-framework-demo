@@ -5,8 +5,8 @@ from bazar.config import config
 def logged(func):
     def inner(self, *args, **kargs):
         print('Decorated', self)
-        print(self.request.session['salt'])
-        if not self.request.session['salt']:
+        print(self.request.session)
+        if not self.request.session['logged']:
             self.redirect('/login')
         return func(self, *args, **kargs)
     return inner

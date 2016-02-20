@@ -2,10 +2,27 @@
 <html>
     <head>
         <title>Welcome to Watson!</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <h1>{{ content }}</h1>
-        <p>You are now on your way to creating your first application using Watson.</p>
-        <p>Read more about Watson in <a href="http://watson-framework.readthedocs.org/">the documentation.</a>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Watson</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>{{ content }}</h1>
+                <p>You are now on your way to creating your first application using Watson.</p>
+                <p>Read more about Watson in <a href="http://watson-framework.readthedocs.org/">the documentation.</a>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -6,8 +6,12 @@ routes = {
         'priority': 2
     },
     'login': {
-        'path': '/[:action]',
-        'options': {'controller': 'bazar.controllers.Session'},
+        'path': '/login',
+        'options': {'controller': 'bazar.controllers.Login'},
+    },
+    'logout': {
+        'path': '/logout',
+        'options': {'controller': 'bazar.controllers.Logout'},
     }
 }
 # vim: sw=4 sts=4 et
